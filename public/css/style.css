@@ -1,9 +1,5 @@
 body, main, footer, header {
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
-}
-
-main {
+  font-family: 'Muli', sans-serif;
 }
 
 p {
@@ -14,9 +10,14 @@ ul{
 }
 
 li {
-    font-weight: 200;
+    font-weight: 500;
     list-style: none;
 }
+
+li a {
+  font-weight: 600;
+}
+
 input{
     border: none;
 }
@@ -26,12 +27,15 @@ button {
 
 h1,h2,h3,h4,h5,h6{
     padding: 0px;
+    font-weight: 800;
 }
 
 .secao_curriculo{
     padding-left: 20px;
     padding-right: 20px;
 }
+
+
 .header-section {
     background-color: #1E1F54;
     text-align: center;
@@ -54,6 +58,9 @@ h1,h2,h3,h4,h5,h6{
 
 .apresentacao {
     text-align: center;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    height: 500px;
 }
 
 .img_profile {
@@ -114,6 +121,12 @@ h1,h2,h3,h4,h5,h6{
 .pb_curriculo{
     padding-bottom: 20px;
 }
+
+.pb{
+  padding-top: 40px;
+} .pt{
+  padding-bottom: 40px;
+}
 .secao_curriculo h3, .secao_curriculo h4, .design{
     width: 100%;
 }
@@ -153,7 +166,7 @@ footer{
     width: 200px
 }
 
-.logo_footer, .logo_top{
+.logo_footer, .logo_top, .logo_top_w{
     width: auto;
     height: 30px;
 }
@@ -616,7 +629,28 @@ a:hover {
 }
 
 .apresentacao_conteudo, .idioma_conteudo{
-    padding-top: 60px;
+  height: 100%;
+}
+.banner{
+  background-color: #15163B;
+  color: #fff;
+  height: 124px;
+}
+.banner_conteudo h4, .banner_conteudo button, .banner_conteudo p{
+  float: left;
+  margin: 0px 0px 0px 40px;
+}
+
+.banner_conteudo{
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+.apresentacao_conteudo, .idioma_conteudo, .apresentacao_conteudo img, .idioma_conteudo img {
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: inline-block
 }
 
 .formacao_conteudo{
@@ -697,4 +731,10 @@ a:hover {
 
 .footer-conteudo{
     padding-bottom: 60px;
+}
+
+.habilidades, .formacao{
+  
+  padding-top: 150px !important;
+  padding-bottom: 100px !important ;
 }

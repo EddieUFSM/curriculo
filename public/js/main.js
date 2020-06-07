@@ -3,10 +3,10 @@
 // TOP Menu Sticky
 $(window).on('scroll', function () {
   var scroll = $(window).scrollTop();
-  var img = document.getElementsByClassName("logo_top")
+  var img = document.getElementsByClassName("logo_top_w")
 	if (scroll < 400) {
     $("#sticky-header").removeClass("sticky");
-    img[0].src= "/img/logoW.svg"
+    img[0].src= "/img/logo.svg"
     $('#back-top').fadeIn(500);
 	} else {
     $("#sticky-header").addClass("sticky");
@@ -14,10 +14,6 @@ $(window).on('scroll', function () {
     $('#back-top').fadeIn(500);
 	}
 });
-
-
-
-
 
 $(document).ready(function(){
 
@@ -380,9 +376,6 @@ function mailChimp() {
   $('#mc_embed_signup').find('form').ajaxChimp();
 }
 mailChimp();
-
-
-
         // Search Toggle
         $("#search_input_box").hide();
         $("#search").on("click", function () {
