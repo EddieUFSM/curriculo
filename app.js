@@ -1,6 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv')
 const app = express();
+var ProgressBar = require('progressbar.js');
 
 require('dotenv').config()
 
@@ -14,12 +15,27 @@ app.use('/js', express.static(__dirname + '/public/js'));
 app.use('/css', express.static(__dirname + '/public/css'));
 app.use('/vendors', express.static(__dirname + '/public/vendors'));
 
+
+
 app.get('/', function(req, res) {
+    
     res.status(200).render('curriculo')
 });
 
 app.get('/home', function(req,res){
-    res.status(200).render('index')
+    res.status(200).render('workonit')
+})
+
+app.get('/contato', function(req,res){
+    res.status(200).render('workonit')
+})
+
+app.get('/formacao', function(req,res){
+    res.status(200).render('formacao')
+})
+
+app.get('/experiencias', function(req,res){
+    res.status(200).render('experiencia')
 })
 
 app.get('/index', function(req,res){
