@@ -39,7 +39,7 @@ app.get('/experiencias', function(req,res){
 })
 
 app.get('/index', function(req,res){
-    res.status(200).render('index')
+    res.status(200).render('workonit')
 })
 
 app.get('/*', function(req, res) {
