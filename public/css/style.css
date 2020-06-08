@@ -738,3 +738,30 @@ a:hover {
   padding-top: 150px !important;
   padding-bottom: 100px !important ;
 }
+
+.experiencias h4{
+  padding-top: 30px;
+}
+
+@media(max-width:767px){
+  .apresentacao{
+    height: 840px;
+  }
+  .logo_footer{
+    margin-top: 10px;
+  }
+  
+}
+
+
+@media(max-width:426px){
+  .apresentacao{
+    height: 900px;
+  }
+  .logo_footer{
+    margin-top: 10px;
+  }
+  .nav_link_footer{
+    margin-left: 40px;
+  }
+}
